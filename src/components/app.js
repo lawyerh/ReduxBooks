@@ -7,6 +7,7 @@ import rootReducer from '../reducers/index'; //Added
 const store = createStore(rootReducer) //Added
 
 import BookList from '../containers/book-list';
+import BookDetail from '../containers/book-detail';
 
 export default class App extends Component {
   render() {
@@ -14,6 +15,7 @@ export default class App extends Component {
       <Provider store={store}> 
         <div>
           <BookList />
+          <BookDetail />
         </div>
       </Provider>
     );
