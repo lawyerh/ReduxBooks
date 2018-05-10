@@ -4,12 +4,13 @@ import { connect } from 'react-redux';
 class BookDetail extends Component
 {
     render(){
-        console.log(`i am the console log!!! ${JSON.stringify(this.props)}`);
         if(this.props.book)
         {
             return (
                 <div>
-                    {this.props.book.title}
+                    <h3>
+                        {this.props.book.title}
+                    </h3>
                 </div>
             );
         }
